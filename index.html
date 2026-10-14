@@ -359,5 +359,26 @@ const Chat = (() => {
   return {open,close,send};
 })();
 </script>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DgL00000dpQZt',
+				'Github_Messaging_Setting',
+				'https://pr1789623421200.my.site.com/ESWGithubMessagi1791961814893',
+				{
+					scrt2URL: 'https://pr1789623421200.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://pr1789623421200.my.site.com/ESWGithubMessagi1791961814893/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 </body>
+
 </html>
